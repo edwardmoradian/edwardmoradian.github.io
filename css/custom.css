@@ -1,13 +1,16 @@
 /* style.css */
 
 html {
-scroll-behavior: smooth;
-}
-
-html {
     scrollbar-width: thin;
     scrollbar-color: #515151 #1e1e2f ;
+    scroll-behavior: smooth;
+}
 
+html,body {
+    height:100%; 
+    width:100%;
+    margin:0;
+    padding:0
 }
 
 header {
@@ -120,17 +123,8 @@ a:hover {
 
 
 .container_1 {
-   text-align:center;
-   position: relative;
-   width: 80%;
-   left:10%;
-   right:10%;
-   top: 25%;
-   height:50%; 
-   bottom: 50%;
-   box-sizing: border-box;
    background-color:#f6f4f3;
-
+   padding: 50px 50px 50px 50px;
 }       
 
 .container_2 {
@@ -157,27 +151,20 @@ a:hover {
 .grad_pic {
     display:inline-block;
     position: absolute;
-    left:50px;
-    top:25px;
+    height:100%;
 }    
 
 .intro{
-    font-size: 25px;
+    font-size: 40px;
     font-family: "Freestyle Script";
-    display:inline-block;
-    position:absolute;
-    bottom:10%;
-    left: 25%;
-}      
+    height:100%;
+}
 
 .intro2{
     font-size: 30px;
     font-family: "Freestyle Script";
     display:inline-block;
-    position:absolute;
-    top:25%;
-    left: 50%;
-    right: 25%;
+    height:100%;
 }    
 
 .contact1{
