@@ -7,53 +7,20 @@ html {
 }
 
 html,body {
-    height:100%; 
-    width:100%;
     margin:0;
     padding:0
 }
 
-header {
-    background-color: white;
-    font-family: "Poppins Regular";
-    color: #aaaaaa;
-    z-index:3;
-}
-
-header {
-    font-size: 20px;
-    margin: 0px 0 0 50px;
-    position: sticky;
-    top: 0;
-}
-
-header nav {
-    float: right;
-    text-align:right;
-    margin: 10px 150px 0 0;
-    font-size: 18px;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1.75em;
-}
-
-
-header nav li {
-    line-height: 0px;
-    display: inline;
-    margin: 50px 0 100px 50px;
-}
-
-.logo-text {
+.logo {
     float: left;
-    margin: 10px 100px 0 0;
+    margin-left: 20px;
     line-height: 50px;
     font-size: 20px;
     color: #aaaaaa;
     font-weight: 600;
 }
 
-.logo-text span {
+.logo span {
     font-weight: 400;
 }
 
@@ -66,13 +33,10 @@ a:hover {
     color: #696969;
 }
 
-
-
 .main{
    height: 100vh;
    background: white;
    box-sizing: border-box; 
-   border-top: 4px solid darkgrey;
 }
 
 
@@ -80,7 +44,6 @@ a:hover {
     background:#262629;
     color:white;
     border-top: 4px solid darkgrey;
-
 }
 
 .main p {
@@ -121,31 +84,23 @@ a:hover {
     
 }
 
-
 .container_1 {
    background-color:#f6f4f3;
    padding: 50px 50px 50px 50px;
+   position: relative;
+   margin-top: 150px;
 }       
 
 .container_2 {
+   background-color:#3f3f43;
    text-align:center;
    position: relative;
-   width: 80%;
-   left:10%;
-   right:10%;
-   top: 25%;
-   height:50%; 
-   bottom: 50%;
-   box-sizing: border-box;
-   background-color:#3f3f43;
-
+   margin-top: 300px;
 }      
 
 .container_2 img{
     display:inline-block;
     position: absolute;
-    top:20%;
-    left:5%;
 }   
 
 .grad_pic {
@@ -171,34 +126,25 @@ a:hover {
     font-size: 30px;
     font-family: "Freestyle Script";
     display:inline-block;
-    position:absolute;
-    top:30%;
-    left: 5%;
-    right: 45%;
+    position:relative;
 }    
 
 .credits{
     font-size: 30px;
     font-family: "Poppins Regular";
     display:inline-block;
-    position:absolute;
-    bottom:0%;
-    right: 0%;
+    position:relative;
 
 }
 
 .container_2 nav {
     z-index:4;
     position: relative;
-    top:35%;
-    left: 35%;
-    right: 45%;
 }
 
 .container_2 nav li {
     position: relative;
     display: inline;
-    margin: 0 0 0 150px;
 }
 
 /* For chrome, Safari */
@@ -216,4 +162,4 @@ a:hover {
 ::-webkit-scrollbar-thumb {
   background: #6e6e6e;
 }
-   
+
