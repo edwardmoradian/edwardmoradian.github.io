@@ -66,7 +66,6 @@ a:hover {
 .contact nav {
     float: left;
     text-align:left;
-    margin: 150px 5px 0 0;
     font-size: 18px;
 }
 
@@ -96,11 +95,12 @@ a:hover {
    text-align:center;
    position: relative;
    margin-top: 300px;
+   padding: 40px 0 40px 0;
 }      
 
 .container_2 img{
     display:inline-block;
-    position: absolute;
+    position: relative;
 }   
 
 .grad_pic {
@@ -125,16 +125,16 @@ a:hover {
 .contact1{
     font-size: 30px;
     font-family: "Freestyle Script";
-    display:inline-block;
+    display:inline-flex;
     position:relative;
 }    
 
 .credits{
     font-size: 30px;
     font-family: "Poppins Regular";
-    display:inline-block;
     position:relative;
-
+    display:inline-flex;
+    float:right;
 }
 
 .container_2 nav {
