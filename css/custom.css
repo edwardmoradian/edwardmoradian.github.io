@@ -86,7 +86,7 @@ a:hover {
 
 .container_1 {
    background-color:#f6f4f3;
-   padding: 50px 50px 50px 50px;
+   padding: 40px 40px 40px 40px;
    position: relative;
    margin-top: 5%;
 }       
@@ -95,7 +95,7 @@ a:hover {
    background-color:#3f3f43;
    text-align:center;
    position: relative;
-   margin-top: 13%;
+   margin-top: 11%;
    padding: 40px 0 40px 0;
 }      
 
@@ -114,24 +114,26 @@ a:hover {
     position: relative;
 }   
 
-.grad_pic {
-    display:inline-block;
-    position: absolute;
-    height:100%;
-}    
-
 .intro{
-    font-size: 40px;
+    font-size: 2.2vmax;
     font-family: "Freestyle Script";
     height:100%;
 }
 
 .intro2{
-    font-size: 30px;
-    font-family: "Freestyle Script";
+    font-size: 1.3vmax;
+    font-family: "Poppins";
+    text-align: left;
     display:inline-block;
     height:100%;
 }    
+
+.intro3{
+    font-size: 1vmax;
+    font-family: "Poppins";
+    display:inline-block;
+    height:100%;
+}  
 
 .contact1{
     font-size: 30px;
