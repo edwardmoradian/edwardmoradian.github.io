@@ -6,10 +6,7 @@ html {
     scroll-behavior: smooth;
 }
 
-html,body {
-    margin:0;
-    padding:0
-}
+
 
 .logo {
     float: left;
@@ -44,6 +41,10 @@ a:hover {
     background:#262629;
     color:white;
     border-top: 4px solid darkgrey;
+}
+
+.resume img{
+    padding: 5px 5px 5px 5px;
 }
 
 .main p {
@@ -98,6 +99,16 @@ a:hover {
    padding: 40px 0 40px 0;
 }      
 
+.container_2 nav {
+    z-index:4;
+    position: relative;
+}
+
+.container_2 nav li {
+    position: relative;
+    display: inline;
+}
+
 .container_2 img{
     display:inline-block;
     position: relative;
@@ -135,16 +146,6 @@ a:hover {
     position:relative;
     display:inline-flex;
     float:right;
-}
-
-.container_2 nav {
-    z-index:4;
-    position: relative;
-}
-
-.container_2 nav li {
-    position: relative;
-    display: inline;
 }
 
 /* For chrome, Safari */
