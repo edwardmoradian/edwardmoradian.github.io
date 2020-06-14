@@ -47,6 +47,10 @@ a:hover {
     padding: 5px 5px 5px 5px;
 }
 
+.contact img{
+    padding: 5px 5px 5px 5px;
+}
+
 .main p {
     margin:0;
 }
@@ -96,7 +100,7 @@ a:hover {
    text-align:center;
    position: relative;
    margin-top: 11%;
-   padding: 40px 0 40px 0;
+   padding: 30px 30px 30px 30px;
 }      
 
 .container_2 nav {
@@ -143,10 +147,11 @@ a:hover {
 }    
 
 .credits{
-    font-size: 30px;
+    font-size: 12px;
     font-family: "Poppins Regular";
-    position:relative;
-    display:inline-flex;
+    background-color:#262629;
+    width:100%;
+    color:lightgrey;
     float:right;
 }
 
