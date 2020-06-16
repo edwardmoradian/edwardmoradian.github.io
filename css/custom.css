@@ -6,12 +6,7 @@ html {
     scroll-behavior: smooth;
 }
 
-
-
 .logo {
-    float: left;
-    margin-left: 20px;
-    line-height: 50px;
     font-size: 20px;
     color: #aaaaaa;
     font-weight: 600;
@@ -158,17 +153,32 @@ a:hover {
 /* For chrome, Safari */
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+    width: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #5a5a5a;
+    background: #5a5a5a;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #6e6e6e;
+    background: #6e6e6e;
 }
 
+.navbar li{
+    margin-right: 25px;
+}
 
+.navbar {
+    padding: 0px;
+
+}
+
+.navbar-brand {
+    padding: 0px;
+}
+
+.navbar-brand p{
+    margin-bottom: .6rem;
+}
