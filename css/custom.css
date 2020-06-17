@@ -8,8 +8,9 @@ html {
 
 .logo {
     font-size: 20px;
-    color: #aaaaaa;
+    color: white;
     font-weight: 600;
+    font-style:"Arial";
 }
 
 .logo span {
@@ -22,7 +23,7 @@ a {
 }
 
 a:hover {
-    color: #696969;
+    color: white;
 }
 
 .main{
