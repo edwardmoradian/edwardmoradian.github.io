@@ -51,6 +51,13 @@ a:hover {
     margin:0;
 }
 
+.experience{
+    background: #07112f;
+    color:white;
+    border-top: 4px solid darkgrey;
+}
+
+
 .philosophy{
     background: white;
     color:white;
