@@ -106,6 +106,12 @@ a:hover {
    padding: 30px 30px 30px 30px;
 }      
 
+.container_3 {
+   background-color:#0c1d51;
+   padding: 20px 20px 20px 20px;
+   position: relative;
+} 
+
 .container_2 nav {
     z-index:4;
     position: relative;
