@@ -61,6 +61,9 @@ a:hover {
     color:white;
 }
 
+.exp_pad{
+    padding: 20px 0 20px 0;
+}
 
 .philosophy{
     background: white;
@@ -70,6 +73,7 @@ a:hover {
 .phil_pad{
     padding: 5px 0 5px 0;
 }
+
 .contact{
     background: #262629;
     color:white;
