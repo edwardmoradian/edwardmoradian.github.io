@@ -27,7 +27,7 @@ a:hover {
 }
 
 .main{
-   height: 100vh;
+   height: 110vh;
    background: white;
    box-sizing: border-box; 
 }
@@ -36,7 +36,6 @@ a:hover {
 .resume{
     background:#262629;
     color:white;
-    border-top: 4px solid darkgrey;
 }
 
 .resume img{
@@ -54,20 +53,17 @@ a:hover {
 .experience{
     background: #07112f;
     color:white;
-    border-top: 4px solid darkgrey;
 }
 
 
 .philosophy{
     background: white;
     color:white;
-    border-top: 4px solid darkgrey;
 }
 
 .contact{
     background: #262629;
     color:white;
-    border-top: 4px solid darkgrey;
 }
 
 
@@ -95,14 +91,12 @@ a:hover {
    background-color:#f6f4f3;
    padding: 40px 40px 40px 40px;
    position: relative;
-   margin-top: 5%;
 }       
 
 .container_2 {
    background-color:#3f3f43;
    text-align:center;
    position: relative;
-   margin-top: 11%;
    padding: 30px 30px 30px 30px;
 }      
 
