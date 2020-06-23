@@ -65,6 +65,17 @@ a:hover {
     padding: 20px 0 20px 0;
 }
 
+.experience ul {
+  position: relative;
+  list-style: none;
+}
+
+.experience li::before {
+  content: '▶';
+  position: absolute;
+  left: 0;
+}
+
 .philosophy{
     background: white;
     color:white;
@@ -166,10 +177,10 @@ a:hover {
 .credits{
     font-size: 12px;
     font-family: "Poppins Regular";
-    background-color:#262629;
+    background-color:#3f3f43;
     width:100%;
     color:lightgrey;
-    float:right;
+    height: 40px;
 }
 
 /* For chrome, Safari */
@@ -205,13 +216,25 @@ a:hover {
     margin-bottom: .6rem;
 }
 
-.experience ul {
-  position: relative;
-  list-style: none;
+/* border-br */
+
+.black-br{
+    height: 20px; 
+    background-color: #262629; 
+    color: #262629;
+    width:100%;
 }
 
-.experience li::before {
-  content: '▶';
-  position: absolute;
-  left: 0;
+.white-br{
+    height: 20px; 
+    background-color: white; 
+    color: white;
+    width:100%;
+}
+
+.blue-br{
+    height: 20px; 
+    background-color: #07112f; 
+    color: #07112f;
+    width:100%;
 }
