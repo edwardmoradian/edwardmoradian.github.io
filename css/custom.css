@@ -205,3 +205,13 @@ a:hover {
     margin-bottom: .6rem;
 }
 
+.experience ul {
+  position: relative;
+  list-style: none;
+}
+
+.experience li::before {
+  content: '▶';
+  position: absolute;
+  left: 0;
+}
