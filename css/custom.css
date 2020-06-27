@@ -2,12 +2,11 @@
 
 html {
     scrollbar-width: thin;
-    scrollbar-color: #6e6e6e #5a5a5a ;
+    scrollbar-color: #6e6e6e #5a5a5a;
     scroll-behavior: smooth;
 }
 
 .logo {
-    font-size: 20px;
     color: white;
     font-weight: 600;
     font-style:"Arial";
@@ -18,7 +17,6 @@ html {
 }
 
 .page-logo{
-    font-size: 2.6vmax;
     font-family: "Freestyle Script";
     height:100%;
     top:10%;
@@ -38,6 +36,8 @@ a:hover {
    background: white;
    box-sizing: border-box; 
 }
+
+/* add background img */
 
 #home{
     background-image: url('https://edwardmoradian.github.io/static/images/grad_pic_4.jpg');
@@ -84,6 +84,10 @@ a:hover {
   left: 0;
 }
 
+.resume-dates{
+    font-size:40px;
+}
+
 .philosophy{
     background: white;
     color:white;
@@ -98,11 +102,9 @@ a:hover {
     color:white;
 }
 
-
 .contact nav {
     float: left;
     text-align:left;
-    font-size: 18px;
 }
 
 .contact nav li {
@@ -112,12 +114,13 @@ a:hover {
 
 .contact p {
     line-height: 0px;
-    font-size: 15px;
     margin: 30px 20px 20px 20px;
     color: #aaaaaa;
     float: right;
     
 }
+
+/* container styles to override bootstrap */
 
 .container_1 {
    background-color:#f6f4f3;
@@ -154,14 +157,14 @@ a:hover {
     position: relative;
 }   
 
+/* font attributes for diff pages */
+
 .intro{
-    font-size: 2.2vmax;
     font-family: "Freestyle Script";
     height:100%;
 }
 
 .intro2{
-    font-size: 1.3vmax;
     font-family: "Poppins";
     text-align: left;
     display:inline-block;
@@ -169,21 +172,18 @@ a:hover {
 }    
 
 .intro3{
-    font-size: 1vmax;
     font-family: "Poppins";
     display:inline-block;
     height:100%;
 }  
 
 .contact1{
-    font-size: 30px;
     font-family: "Freestyle Script";
     display:inline-flex;
     position:relative;
 }    
 
 .credits{
-    font-size: 12px;
     font-family: "Poppins Regular";
     background-color:#3f3f43;
     width:100%;
@@ -206,6 +206,8 @@ a:hover {
 ::-webkit-scrollbar-thumb {
     background: #6e6e6e;
 }
+
+/* navbar */
 
 .navbar li{
     margin-right: 25px;
@@ -247,24 +249,189 @@ a:hover {
     width:100%;
 }
 
+/* media queries */
 
 @media (max-width: 575.98px) {
     #home {
       background-image:none;
      }
+    .container_1{
+        padding:20px 20px 20px 20px;
+    }
+    .container_2{
+        padding:20px 20px 20px 20px;
+    }
+    p{
+        font-size:14px;
+    }
+    h1{
+        font-size:30px;
+    }
+    h2{
+        font-size:16px;
+    }
+    h4{
+        font-size:18px;
+    }
+    h5{
+        font-size:15px;
+    }
+    h6{
+        font-size:12px;
+    }
+    .resume-dates{
+        font-size:20px;
+    }
+    .logo{
+        font-size:15px;
+    } 
+    .page-logo{
+        font-size:35px;
+    }    
+    .contact nav{
+        font-size:12px;
+    }    
+    .contact p{
+        font-size:10px;
+    }    
+    .intro{
+        font-size:25px;
+    }    
+    .intro2{
+        font-size:15px;
+    }    
+    .intro3{
+        font-size:18px;
+    }    
+    .intro4{
+        font-size:18px;
+    }    
+
 }
 
-@media (max-width: 767.98px) {
-    #home {
-      background-image:none;
-     }
+@media (max-width: 769px) {
+    .container_1{
+        padding:20px 20px 20px 20px;
+    }
+    .container_2{
+        padding:20px 20px 20px 20px;
+    }
+    nav{
+        font-size:10px;
+    }
+    p{
+        font-size:14px;
+    }
+    h1{
+        font-size:30px;
+    }
+    h2{
+        font-size:26px;
+    }
+    h5{
+        font-size:15px;
+    }
+    .resume-dates{
+        font-size:20px;
+    }
+    .logo{
+        font-size:15px;
+    } 
+    .page-logo{
+        font-size:35px;
+    }    
+    .contact nav{
+        font-size:12px;
+    }    
+    .contact p{
+        font-size:10px;
+    }    
+    .intro{
+        font-size:25px;
+    }    
+    .intro2{
+        font-size:15px;
+    }    
+    .intro3{
+        font-size:18px;
+    }    
+    .intro4{
+        font-size:18px;
+    }    
 }
 
-@media (max-width: 991.98px) {
+@media (min-width: 991.98px) {
     #home {
         background-size: 450px 672px;
      }
+    p{
+        font-size:16px;
+    }
+    h1{
+        font-size:30px;
+    }
+    .resume-dates{
+        font-size:30px;
+    }
+    .logo{
+        font-size:15px;
+    } 
+    .page-logo{
+        font-size:35px;
+    }    
+    .contact nav{
+        font-size:12px;
+    }    
+    .contact p{
+        font-size:10px;
+    }    
+    .intro{
+        font-size:30px;
+    }    
+    .intro2{
+        font-size:20px;
+    }    
+    .intro3{
+        font-size:18px;
+    }    
+    .intro4{
+        font-size:18px;
+    }    
 }
 
-@media (max-width: 1199.98px) {
+
+@media (min-width: 1199.98px) {
+    p{
+        font-size:16px;
+    }
+    h1{
+        font-size:40px;
+    }
+    .resume-dates{
+        font-size:40px;
+    }
+    .logo{
+        font-size:20px;
+    } 
+    .page-logo{
+        font-size:45px;
+    }    
+    .contact nav{
+        font-size:18px;
+    }    
+    .contact p{
+        font-size:15px;
+    }    
+    .intro{
+        font-size:35px;
+    }    
+    .intro2{
+        font-size:20px;
+    }    
+    .intro3{
+        font-size:10px;
+    }    
+    .intro4{
+        font-size:23px;
+    }    
 }
