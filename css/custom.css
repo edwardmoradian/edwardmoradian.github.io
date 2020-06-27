@@ -402,8 +402,10 @@ a:hover {
 
 }
 
-
 @media (min-width: 1199.98px) {
+    #home {
+        background-size: 500px 748px;
+     }
     p{
         font-size:16px;
     }
