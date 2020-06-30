@@ -251,9 +251,18 @@ a:hover {
 
 /* media queries */
 
-@media (max-width: 575.98px) {
+@media (max-width: 575.97px) {
     #home {
-      background-image:none;
+        background-image: none;
+     }
+    footer p{
+        font-size:12px;
+    }    
+}
+
+@media (min-width: 575.98px) {
+    #home {
+        background-size: 350px 524px;
      }
     .container_1{
         padding:20px 20px 20px 20px;
@@ -262,6 +271,9 @@ a:hover {
         padding:20px 20px 20px 20px;
     }
     p{
+        font-size:14px;
+    }
+    li{
         font-size:14px;
     }
     h1{
@@ -283,7 +295,7 @@ a:hover {
         font-size:15px;
     } 
     .page-logo{
-        font-size:35px;
+        font-size:30px;
     }    
     .contact nav{
         font-size:12px;
@@ -308,7 +320,10 @@ a:hover {
     }    
 }
 
-@media (max-width: 769px) {
+@media (min-width: 769px) {
+    #home {
+        background-size: 350px 524px;
+     }
     .container_1{
         padding:20px 20px 20px 20px;
     }
@@ -319,16 +334,25 @@ a:hover {
         font-size:10px;
     }
     p{
+        font-size:12px;
+    }
+    li{
         font-size:14px;
     }
     h1{
         font-size:30px;
     }
     h2{
-        font-size:26px;
+        font-size:24px;
+    }
+    h4{
+        font-size:18px;
     }
     h5{
-        font-size:15px;
+        font-size:13px;
+    }
+    h6{
+        font-size:14px;
     }
     .resume-dates{
         font-size:20px;
@@ -337,7 +361,7 @@ a:hover {
         font-size:15px;
     } 
     .page-logo{
-        font-size:35px;
+        font-size:30px;
     }    
     .contact nav{
         font-size:12px;
