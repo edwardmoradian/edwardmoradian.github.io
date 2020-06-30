@@ -17,7 +17,7 @@ html {
 }
 
 .page-logo{
-    font-family: "Freestyle Script";
+    font-family: "Playball";
     height:100%;
     top:10%;
 }
@@ -160,7 +160,7 @@ a:hover {
 /* font attributes for diff pages */
 
 .intro{
-    font-family: "Freestyle Script";
+    font-family: "Playball";
     height:100%;
 }
 
@@ -178,7 +178,7 @@ a:hover {
 }  
 
 .contact1{
-    font-family: "Freestyle Script";
+    font-family: "Playball";
     display:inline-flex;
     position:relative;
 }    
@@ -258,6 +258,15 @@ a:hover {
     footer p{
         font-size:12px;
     }    
+    nav li{
+        font-size:10px;
+    }
+    .resume-dates{
+        font-size:20px;
+    }
+    .contact1 h1{
+        font-size:30px;
+    }   
 }
 
 @media (min-width: 575.98px) {
@@ -303,6 +312,9 @@ a:hover {
     .contact p{
         font-size:10px;
     }    
+    .contact1 h1{
+        font-size:20px;
+    }   
     .intro{
         font-size:25px;
     }    
@@ -365,6 +377,9 @@ a:hover {
     }    
     .contact nav{
         font-size:12px;
+    }  
+    .contact1 h1{
+        font-size:25px;
     }    
     .contact p{
         font-size:10px;
@@ -436,8 +451,11 @@ a:hover {
     h1{
         font-size:40px;
     }
+    h5{
+        font-size:20px;
+    }
     .resume-dates{
-        font-size:40px;
+        font-size:30px;
     }
     .logo{
         font-size:20px;
