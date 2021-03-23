@@ -69,8 +69,26 @@ a:hover {
     color:white;
 }
 
-.exp_pad{
+.exp_pad {
     padding: 20px 0 20px 0;
+}
+
+.exp_pad_2{
+    padding: 20px 10px 20px 10px;
+	background:#4b4b50;
+	border-radius: 0% 0% 15% 15%;
+	margin-top:2%;
+}
+
+.exp_pad_2:hover{
+	background-color:#58585d;
+}
+
+.exp_pad_3{
+}
+
+.exp_pad_3:hover{
+	background-color:#58585d;
 }
 
 .experience ul {
