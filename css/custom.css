@@ -48,7 +48,7 @@ a:hover {
 }
 
 .resume{
-    background:#1d1d1f;
+    background:#131315;
     color:white;
 }
 
@@ -75,21 +75,21 @@ a:hover {
 
 .exp_pad_2{
     padding: 20px 10px 20px 10px;
-	background:#424248;
+	background:#39393d;
 	border-radius: 0% 0% 15% 15%;
 	margin-top:2%;
 }
 
 .exp_pad_2:hover{
-	background-color:#4c4c52;
+	background-color:#424248;
 }
 
 .exp_pad_3{
-	background:#424248;
+	background:#39393d;
 }
 
 .exp_pad_3:hover{
-	background-color:#4c4c52;
+	background-color:#424248;
 }
 
 .experience ul {
@@ -117,7 +117,7 @@ a:hover {
 }
 
 .contact{
-    background: #1d1d1f;
+    background: #131315;
     color:white;
 }
 
@@ -249,8 +249,8 @@ a:hover {
 
 .black-br{
     height: 20px; 
-    background-color: #262629; 
-    color: #262629;
+    background-color: #131315; 
+    color: #131315;
     width:100%;
 }
 
