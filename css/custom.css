@@ -103,8 +103,16 @@ a:hover {
   left: 0;
 }
 
-.resume-dates{
+.experience-topics{
     font-size:40px;
+    /* font-size:40px;
+    display: flex;
+    align-items: center;  vertical 
+    justify-content: left;  horizontal  
+    align-items: center;
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    margin: auto; */
 }
 
 .philosophy{
@@ -280,7 +288,7 @@ a:hover {
     nav li{
         font-size:10px;
     }
-    .resume-dates{
+    .experience-topics{
         font-size:20px;
     }
     .contact1 h1{
@@ -316,7 +324,7 @@ a:hover {
     h5{
         font-size:15px;
     }
-    .resume-dates{
+    .experience-topics{
         font-size:20px;
     }
     .logo{
@@ -385,7 +393,7 @@ a:hover {
     h6{
         font-size:14px;
     }
-    .resume-dates{
+    .experience-topics{
         font-size:20px;
     }
     .logo{
@@ -427,7 +435,7 @@ a:hover {
     h1{
         font-size:30px;
     }
-    .resume-dates{
+    .experience-topics{
         font-size:30px;
     }
     .logo{
@@ -473,7 +481,7 @@ a:hover {
     h5{
         font-size:20px;
     }
-    .resume-dates{
+    .experience-topics{
         font-size:30px;
     }
     .logo{
