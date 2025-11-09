@@ -1,577 +1,128 @@
-<!--
-Title: Personal Website
-Author: Edward Moradian
-Notes:
-1) Instead of using </br> replace with margin-top and margin-bottom
--->
-
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Edward Moradian Personal Website</title>
-        <script src="bootstrap/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
-        <link rel="stylesheet" href="css/custom.css" />
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" 
-        content="Edward Moradian's personal resume website that details professional career.  
-        Includes resume and contact information through LinkedIn, Facebook, Github and email.  
-        Tech stack, programming languages, R, SAS, Python, machine learning platforms, tensorflow, 
-		scikit learn, keras, SAS viya, databases, BigQuery, Azure Databricks, Azure Data Factory, Oracle, MySQL, 
-        Postgres, front-end app development, flask, html, css, javascript, data visualization, 
-        dashboarding, tableau, Microsoft power bi, plotly, ggplot2, cloud functions. AWS, Google Cloud Platform, Azure.
-		Specializes in data science and statistics. Lives in Los Angeles, California. Graduated with M.S. Statistics degree from
-        California State University, East Bay.">
-        <meta name="google-site-verification" content="zm68GdyqAOuvLC4s0Dw9Dm7gxJ7mih0_dhodRk_kk34" />
-        <link href="https://fonts.googleapis.com/css2?family=Playball&family=Satisfy&display=swap" rel="stylesheet"> 
-		<!-- Facebook Pixel Code -->
-		<script>
-		!function(f,b,e,v,n,t,s)
-		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-		n.queue=[];t=b.createElement(e);t.async=!0;
-		t.src=v;s=b.getElementsByTagName(e)[0];
-		s.parentNode.insertBefore(t,s)}(window, document,'script',
-		'https://connect.facebook.net/en_US/fbevents.js');
-		fbq('init', '1142241622856506');
-		fbq('track', 'PageView');
-		</script>
-		<noscript><img height="1" width="1" style="display:none"
-		src="https://www.facebook.com/tr?id=1142241622856506&ev=PageView&noscript=1"
-		/></noscript>
-		<!-- End Facebook Pixel Code -->
-    </head>
-    
-    <body>
-        <a href="#top"></a>
-        <nav id="navbar" class="navbar sticky-top" style="background-color:#006aaa;">
-            <header class="container-fluid">
-                <div class="logo-text navbar-header">
-                <img class="img-fluid rounded-circle" src="static/images/star_2.jpg">
-                <a class="navbar-brand" href="#"><p class="logo">&nbsp;Edward <span>Moradian</span></p></a>
-                </div>
-                    <ul class="nav navbar-nav justify-content-between">
-                        <li style="display:inline-flex;"><svg class="bi bi-info-circle" width="1.5em" height="1.5em" viewBox="0 0 16 16" fill="white" xmlns="http://www.w3.org/2000/svg" style="margin-right:6px;">
-                        <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                        <path d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z"/>
-                        <circle cx="8" cy="4.5" r="1"/>
-                        </svg>
-                        <a href="#top"><h6>About</h6></a></li>
-                        <li style="display:inline-flex;"><svg class="bi bi-paperclip" width="1.5em" height="1.5em" viewBox="0 0 16 16" fill="white" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M4.5 3a2.5 2.5 0 0 1 5 0v9a1.5 1.5 0 0 1-3 0V5a.5.5 0 0 1 1 0v7a.5.5 0 0 0 1 0V3a1.5 1.5 0 1 0-3 0v9a2.5 2.5 0 0 0 5 0V5a.5.5 0 0 1 1 0v7a3.5 3.5 0 1 1-7 0V3z"/>
-                        </svg>                     
-                        <a href="#resume"><h6>Resume</h6></a></li>
-                        <li style="display:inline-flex;"><svg class="bi bi-book" width="1.5em" height="1.5em" viewBox="0 0 16 16" fill="white" xmlns="http://www.w3.org/2000/svg" style="margin-right:6px;">
-                        <path fill-rule="evenodd" d="M3.214 1.072C4.813.752 6.916.71 8.354 2.146A.5.5 0 0 1 8.5 2.5v11a.5.5 0 0 1-.854.354c-.843-.844-2.115-1.059-3.47-.92-1.344.14-2.66.617-3.452 1.013A.5.5 0 0 1 0 13.5v-11a.5.5 0 0 1 .276-.447L.5 2.5l-.224-.447.002-.001.004-.002.013-.006a5.017 5.017 0 0 1 .22-.103 12.958 12.958 0 0 1 2.7-.869zM1 2.82v9.908c.846-.343 1.944-.672 3.074-.788 1.143-.118 2.387-.023 3.426.56V2.718c-1.063-.929-2.631-.956-4.09-.664A11.958 11.958 0 0 0 1 2.82z"/>
-                        <path fill-rule="evenodd" d="M12.786 1.072C11.188.752 9.084.71 7.646 2.146A.5.5 0 0 0 7.5 2.5v11a.5.5 0 0 0 .854.354c.843-.844 2.115-1.059 3.47-.92 1.344.14 2.66.617 3.452 1.013A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.276-.447L15.5 2.5l.224-.447-.002-.001-.004-.002-.013-.006-.047-.023a12.582 12.582 0 0 0-.799-.34 12.96 12.96 0 0 0-2.073-.609zM15 2.82v9.908c-.846-.343-1.944-.672-3.074-.788-1.143-.118-2.387-.023-3.426.56V2.718c1.063-.929 2.631-.956 4.09-.664A11.956 11.956 0 0 1 15 2.82z"/>
-                        </svg>
-                        <a href="#experience"><h6>Experience</h6></a></li>
-                        <li style="display:inline-flex;"><svg class="bi bi-cloud" width="1.5em" height="1.5em" viewBox="0 0 16 16" fill="white" xmlns="http://www.w3.org/2000/svg" style="margin-right:6px;">
-                        <path fill-rule="evenodd" d="M4.887 7.2l-.964-.165A2.5 2.5 0 1 0 3.5 12h10a1.5 1.5 0 0 0 .237-2.981L12.7 8.854l.216-1.028a4 4 0 1 0-7.843-1.587l-.185.96zm9.084.341a5 5 0 0 0-9.88-1.492A3.5 3.5 0 1 0 3.5 13h9.999a2.5 2.5 0 0 0 .394-4.968c.033-.16.06-.324.077-.49z"/>
-                        </svg>
-                        <a href="#philosophy"><h6>Philosophy</h6></a></li>
-                        <li style="display:inline-flex;"><svg class="bi bi-phone" width="1.5em" height="1.5em" viewBox="0 0 16 16" fill="White" xmlns="http://www.w3.org/2000/svg" style="margin-right:6px;">
-                        <path fill-rule="evenodd" d="M11 1H5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
-                        <path fill-rule="evenodd" d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-                        </svg>
-                        <a href="#contact"><h6>Contact</h6></a></li>
-                    </ul>
-                </div>
-            </header>
-        </nav>
-        
-        <section id="home" class="main">
-        <div class="container" style="height:20%;margin-left:0px">
-            <div class="row">
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 text-left my-auto">
-                    <h1 class="page-logo">About Me</h1>
-                </div>
-            </div>
-        </div>
-        <div class="container" >
-            <div class="row justify-content-around" style="margin-top:3%;">
-            <!--
-                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 d-none d-lg-block text-center my-auto container_1">
-                    <img class="img-fluid rounded" src="static/images/graduation.jpg"
-                    alt="Edward Moradian grad self-portrait">
-                </div>
-            -->
-                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 d-none d-lg-block text-center my-auto">
-                </div>
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 text-center my-auto">
-                </div>
-                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-center my-auto container_1">
-                    <div>
-                        <h1 class="intro">Data Science</h1>
-                        <h1 class="intro">&</h1>
-                        <h1 class="intro">Statistics</h1>
-                    </div>
-                </div>
-                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 text-center my-auto ">
-                </div>
-            </div>
-            
-            
-        </div>
-        
-        
-        <div class="container" >
-            <div class="row justify-content-around" style="margin-top:4%;">
-            <!--
-                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 d-none d-lg-block text-center my-auto container_1">
-                    <img class="img-fluid rounded" src="static/images/graduation.jpg"
-                    alt="Edward Moradian grad self-portrait">
-                </div>
-            -->
-                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-center my-auto">
-                </div>
-                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 text-center my-auto">
-                </div>
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 text-center my-auto container_1">
-                    <p class="intro2 my-auto">
-                    Hello and welcome to my website! My name is Edward Moradian. I specialize in data science and statistics.
-                    Please navigate through my website. 
-                    Make sure to connect with me if you haven't already through the contact section. 
-                    </p>
-                </div>
-                <div class="intro3 col-xs-2 col-sm-2 col-md-2 col-lg-2 text-center my-auto container_1">
-                    <div>
-                        <p><strong>Title:</strong></br>Data Scientist</p></br>
-                        <p><strong>Location:</strong></br>Los Angeles, California</p></br>
-                        <p><strong>Degree:</strong></br>M.S. Statistcs</p>
-                    </div>
-                </div>
-            </div>
-            
-            
-        </div>
-
-        </section>
-        
-        <section id="resume" class="main resume">
-        <div class="container" style="height:18%; margin-left:0px;">
-            <div class="row">
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 text-left my-auto">
-                    </br></br><h1 class="page-logo">Resume</h1>
-                </div>
-            </div>
-        </div>
-        <div class="container container_2" style="margin-top:.001%;">
-            <h2 class="text-center my-auto">Tech Stack</h2>
-            <h4 class="text-center my-auto">Front-End to Back-End Development from Systems</h4>
-            <div class="row justify-content-around">
-                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 exp_pad_2">
-                <h5>Languages</h5>
-                    <img class="img-fluid rounded" src="static/images/python_2.png"></br>
-                    <img class="img-fluid rounded" src="static/images/Rlogo_2.png">
-                    <img class="img-fluid rounded" src="static/images/saslogo_2.png">
-                </div>
-                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 exp_pad_2">
-                <h5>Machine Learning Platforms</h5>
-                    <img class="img-fluid rounded" src="static/images/Tensorflow_2.png">
-                    <img class="img-fluid rounded" src="static/images/sklearn_2.png">
-                    <img class="img-fluid rounded" src="static/images/keras_2.png">
-                    <img class="img-fluid rounded" src="static/images/sas_viya_2.png">
-                </div>
-                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 exp_pad_2">
-                <h5>Data Engineering</h5>
-                    <img class="img-fluid rounded" src="static/images/databricks_2.png">
-                    <img class="img-fluid rounded" src="static/images/dbt_2.png">
-                    </br>
-                    <img class="img-fluid rounded" src="static/images/adf_2.png">
-                    <img class="img-fluid rounded" src="static/images/airflow_2.png">
-                </div>
-                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 exp_pad_2  ">
-                <h5>Relational Databases</h5>
-                    <img class="img-fluid rounded" src="static/images/mysql_2.png"></br>
-                    <img class="img-fluid rounded" src="static/images/postgres_2.png"></br>
-                    <img class="img-fluid rounded" src="static/images/oracle_2.png">
-                </div>
-			</div>
-			<div class="row justify-content-around">
-                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 exp_pad_2">
-                <h5>Data Warehouses</h5>
-                    <img class="img-fluid rounded" src="static/images/bigquery_2.png"></br>
-                    <img class="img-fluid rounded" src="static/images/redshift_2.png"></br>
-                </div>
-                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 exp_pad_2">
-                <h5>Dashboarding and Data Visualization</h5>
-                    <img class="img-fluid rounded" src="static/images/tableau_2.png">
-                    <img class="img-fluid rounded" src="static/images/power_bi_2.png">
-                    <img class="img-fluid rounded" src="static/images/plotly_2.png">
-                    <img class="img-fluid rounded" src="static/images/ggplot2_2.png">
-                </div>
-				<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 exp_pad_2">
-                <h5>Cloud Environments</h5>
-                    <img class="img-fluid rounded" src="static/images/gcp_2.png">
-                    <img class="img-fluid rounded" src="static/images/azure_2.png">
-                    <img class="img-fluid rounded" src="static/images/aws_2.png">
-                    <img class="img-fluid rounded" src="static/images/nutanix_2.png">
-                </div>
-            </div>
-            <a href="#contact">
-            <button type="button" class="btn btn-outline-light" style="margin-top:2%;"><h5>Contact For Resume</h5>
-            </button></a>
-			</div>
-		</div>
-        </section>
-        <div class="black-br"></div>
-        
-        <section id="experience" class="main experience" style= "min-height: 120vh;">
-        <div class="container" style="height:8%;margin-left:0px;">
-            <div class="row">
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 text-left my-auto">
-                    </br></br><h1 class="page-logo">Experience</h1>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row justify-content-around container_3">
-                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-center">
-                    <p class="text-center exp_pad experience-topics" style="margin-top:25%;">Forecasting<p>
-                </div>
-                <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 text-center">
-                    <div>
-                    <div class="exp_pad">
-                        <h6 class="text-center"><strong>Numerical Forecasts on Future Dates</strong></h6>
-                        <p> 
-                        <ul style="text-align:left;">
-							<li>
-                            Monthly Active Users: Forecasted the number of monthly active users on a cloud gaming platform in 1-6 month forecasts.
-                            </li>
-							<li>
-                            Supply Chain Forecasting: Forecasted the demand amount of units based on the SKU of a refigerant product taking into account sparse, intermittent, and regularly-occurring data using different time series forecasting models.
-							</li>
-                            <li>
-                            Growth Curve Forecasting: Forecasted using nonlinear regression modeling fitting data to a Shifted-Gompertz distribution using an optimization method.
-                            </li>
-                        </p>
-                    </div>
-                    </div>
-                </div>
-                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-center">
-                    <img class="img-fluid rounded exp_pad" src="static/images/timeseries.png" style="margin-top:25%;">
-                </div>
-            </div>
-            </br>
-            <div class="row justify-content-around container_3">
-                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-center">
-                    <p class="text-center exp_pad experience-topics" style="margin-top:20%;">Causal Inference, A/B Testing<p>
-                </div>
-                <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 text-center">
-                    <div>
-                    <div class="exp_pad">
-                        <h6 class="text-center"><strong>Compare Samples of Grouped Data on KPIs</strong></h6>
-                        <p> 
-                        <ul style="text-align:left;">
-                            <li>
-                            Incremental Lift: Analyzed the incremental impact of categorical levels of store visibility on sales controlling for covariates using a multivariate regression model. 
-                            </li>
-                            <li>
-                            Causal Inference: Analyzed the incremental impact of store relocations on sales for each relocated store using a regression discontinuity design.
-                            </li>
-                            <li>
-                            Hypothesis Testing: Tested on randomization schemes in clinical trials to determine a statistically significant difference in proportions of demographic variables of participants to check if randomization was processed correctly.
-                            </li>
-                        </p>
-                    </div>
-                    </div>
-                </div>
-                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-center">
-                    <img class="img-fluid rounded exp_pad" src="static/images/ab.png" style="margin-top:20%;">
-                </div>
-            </div>
-            </br>
-            <div class="row justify-content-around container_3">
-                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-center">
-                    <p class="text-center experience-topics" style="margin-top:20%;">Model Interpretation<p>
-                </div>
-                <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 text-center">
-                    <div>
-                    <div class="exp_pad">
-                        <h6 class="text-center"><strong>Interpreting the Results of Models</strong></h6> 
-                        <p>
-                        <ul style="text-align:left;">
-                            <li>
-                            Model Agnostic Methods: Used PDP, ALE and ICE functions to display the percent increase in the likelihood of a positive sentiment with better or worse performing predictor variable values to determine thresholds.
-                            </li>
-                            <li>
-                            Model Agnostic Methods: Used Shapley values at a local-level to find the influence of store visibility and other variables on store sales to discover outliers in performance.
-                            </li>
-                        </p>
-                    </div>
-                    </div>
-                </div>
-                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-center">
-                    <img class="img-fluid rounded exp_pad" src="static/images/openbox.png">
-                </div>
-                </div>
-            </br>
-            <div class="row justify-content-around container_3">
-                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-center">
-                    <p class="text-center experience-topics" style="margin-top:20%;">Data Engineering, Analytics Engineering<p>
-                </div>
-                <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 text-center">
-                    <div>
-                    <div class="exp_pad">
-                        <h6 class="text-center"><strong>ETL/ELT Pipelines and SQL Scripts</strong></h6>
-                        <p>
-                        <ul style="text-align:left;"> 
-                            <li>
-                            ETL Pipelines: Used airflow to develop data pipelines joining petabyte-sized core tables into a functional format for a marketing small business unit context.
-                            </li>
-                            <li>
-                            ELT Pipelines: Developed a dbt model on a scheduled cadence to create a foundational one-big-table financial transactions model combining raw data tables from orders, fulfillments, exchanges, returns, products, discounts, and etc. for both online and retail store data from Shopify.
-                            </li>
-							<li>
-							Data Orchestration: Orchestrated data pipelines to automate data ingestion and transformation through cloud functions, pub/sub topics, scheduled scripts and on-demand scripts.
-							</li>
-                        </ul>
-                        </p>
-                    </div>
-                    </div>
-                </div>
-                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-center">
-                    <img class="img-fluid rounded exp_pad" src="static/images/dataeng.png" style="margin-top:20%;">
-                </div>
-            </div>
-            </br>
-            <div class="row justify-content-around container_3">
-                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-center">
-                    <p class="text-center experience-topics" style="margin-top:50%;">Data Analysis<p>
-                </div>
-                <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 text-center">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Edward Moradian | Data Science & Analytics Leader</title>
+    <meta name="description" content="Edward Moradian is a Los Angeles-based data science leader delivering experimentation, forecasting, and analytics platforms on a JAMstack architecture.">
+    <meta name="keywords" content="Edward Moradian, Data Scientist, Analytics Leader, JAMstack, Forecasting, Experimentation, Netlify, Next.js">
+    <meta name="author" content="Edward Moradian">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#f7f8fb">
+    <meta property="og:title" content="Edward Moradian | Data Science & Analytics Leader">
+    <meta property="og:description" content="Modern experimentation, forecasting, and analytics platforms delivered on a JAMstack architecture.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://edwardmoradian.github.io/">
+    <meta property="og:image" content="https://edwardmoradian.github.io/static/images/grad_pic_4.jpg">
+    <meta property="og:site_name" content="Edward Moradian Portfolio">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Edward Moradian | Data Science & Analytics Leader">
+    <meta name="twitter:description" content="Modern experimentation, forecasting, and analytics platforms delivered on a JAMstack architecture.">
+    <meta name="twitter:image" content="https://edwardmoradian.github.io/static/images/grad_pic_4.jpg">
+    <link rel="canonical" href="https://edwardmoradian.github.io/">
+    <meta name="google-site-verification" content="zm68GdyqAOuvLC4s0Dw9Dm7gxJ7mih0_dhodRk_kk34" />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://edwardmoradian.github.io/sitemap.xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="bootstrap/js/bootstrap.min.js" defer></script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Edward Moradian",
+        "jobTitle": "Lead Data Scientist",
+        "url": "https://edwardmoradian.github.io/",
+        "image": "https://edwardmoradian.github.io/static/images/grad_pic_4.jpg",
+        "sameAs": [
+            "https://www.linkedin.com/in/edwardmoradian/",
+            "https://github.com/edwardmoradian",
+            "https://stackoverflow.com/users/11365106/edwardmoradian"
+        ],
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Los Angeles",
+            "addressRegion": "CA",
+            "addressCountry": "USA"
+        }
+    }
+    </script>
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1142241622856506');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=1142241622856506&ev=PageView&noscript=1" /></noscript>
+    <!-- End Facebook Pixel Code -->
+</head>
+<body id="top">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <nav id="navbar" class="navbar sticky-top modern-nav">
+        <div class="container nav-content">
+            <div class="nav-brand">
                 <div>
-                <div class="exp_pad">
-                    <h6 class="text-center"><strong>Descriptive Statistics on KPIs</strong></h6> 
-                    <p>
-                    <ul style="text-align:left;"> 
-                        <li>
-                        Exploratory Data Analysis: Perform exploratory data analysis of model features and response variables to inform model selection, parameter and hyperparameter tuning.
-                        </li>
-                        <li>
-                        KPI Creation: Feature engineered foundational KPIs based on absolute financial KPIs (sales, tickets), relative financial KPIs (absolute KPIs made relative to normalize for larger or smaller stores/trade areas), and interest financial KPIs (interest in the product compared to all other products).
-                        </li>
-                        <li>
-                        Stakeholder Business Questions: Provided statistical summaries on key business questions from stakeholders and senior management.
-                        </li>
-                        <li>
-                        KPI Creation: Modeled KPIs including lift, seasonality, benchmarks, and date period comparisons (e.g., MoM, YoY).  
-                        </li>
-                    </ul>
-                    </p>
-                </div>
-                </div>
-                </div>
-                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-center">
-                    <img class="img-fluid rounded exp_pad" src="static/images/kpi.png" style="margin-top:50%;">
+                    <p class="brand-name">Edward Moradian</p>
+                    <p class="brand-role">Data Science & Analytics Leader</p>
                 </div>
             </div>
-            </br>
-            <div class="row justify-content-around container_3">
-                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-center">
-                    <p class="text-center experience-topics" style="margin-top:20%;">Data Dashboarding and Visualization<p>
-                </div>
-                <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 text-center">
-                <div>
-                <div class="exp_pad">
-                    <h6 class="text-center"><strong>Graphically Displaying Summarized Data</strong></h6> 
-                    <p>
-                    <ul style="text-align:left;"> 
-                        <li>
-                        Tableau: Developed dashboards on social media marketing program performance based on customer journey, customer benchmarks, call logs and people analytics from CRM data.
-                        </li>
-                        <li>
-                        Power BI: Replaced manual reports with dynamic, interactive dashboards for weekly and monthly marketing reports with automated data refresh schedules.
-                        </li>
-                        <li>
-                        Graphically represented GIS raster and shapefiles with data visualizations.
-                        </li>
-                    </ul>
-                    </p>
-                </div>
-                </div>
-                </div>
-                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-center">
-                    <img class="img-fluid rounded exp_pad" src="static/images/dash.png">
-                </div>
+            <div class="nav-links">
+                <a class="active" href="index.html">About</a>
+                <a href="resume.html">Resume</a>
+                <a href="techstack.html">Tech Stack</a>
+                <a href="contact.html">Contact</a>
             </div>
-            </br>
-        </section>
-        <div class="blue-br"></div>
+        </div>
+    </nav>
 
+    <main id="main">
+        <section id="home" class="main hero">
+            <div class="container hero-grid">
+                <div class="hero-media">
+                    <img src="static/images/grad_pic_4.jpg" alt="Edward Moradian" class="hero-portrait">
+                </div>
+                <div class="hero-text">
+                    <dl class="detail-list hero-details">
+                        <div>
+                            <dt>Primary Area of Expertise</dt>
+                            <dd>Data Science and Statistics</dd>
+                        </div>
+                        <div>
+                            <dt>Secondary Area of Expertise</dt>
+                            <dd>Data engineering, dashboarding, and data orchestration</dd>
+                        </div>
+                        <div>
+                            <dt>Location</dt>
+                            <dd>Los Angeles, California</dd>
+                        </div>
+                        <div>
+                            <dt>Deliverables</dt>
+                            <dd>Dashboards, reports, presentations, and web apps</dd>
+                        </div>
+                    </dl>
+                    <p class="lead">
+                        Data Scientist with experience across companies, industries, business units, tech stacks, databases and data science problems. An end-to-end, front-end to back-end, data scientist from data engineering on raw data to data science modeling using machine learning or statistical modeling to business intelligence reporting on graphical visualizations on dashboards.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
 
-        <section id="philosophy" class="main philosophy">
-        <div class="container" style="height:18%;margin-left:0px;">
-            <div class="row">
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 text-left my-auto">
-                    </br></br><h1 class="page-logo" style="color:black">Philosophy</h1>
-                </div>
-            </div>
+    <footer>
+        <div class="container footer-content">
+            <p>© 2026 Edward Moradian. Built with a JAMstack workflow.</p>
         </div>
-        <div class="container container_1" style="margin-top:5%;">
-            <h2 class="text-black-50 text-center my-auto">Favorite Philosophy Writings</h2>
-            </br>
-            <div class="row">
-                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                    <div class="phil_pad">
-                    <img class="img-fluid rounded" src="static/philosophers/jsm_2.jpg">
-                    <h6 class="text-black-50 text-center my-auto" style="display: inline-block;">
-                    John Stuart Mill
-                    </h6>
-                    <p class="text-black-50">
-                    "It is better to be a human being dissatisfied than a pig satisfied; 
-                    better to be Socrates dissatisfied than a fool satisfied. And if the fool, 
-                    or the pig, are a different opinion, it is because they only know their own 
-                    side of the question."
-                    </p>
-                    </div>
-                    <div class="phil_pad">
-                    <img class="img-fluid rounded" src="static/philosophers/karl_marx_2.jpg">
-                    <h6 class="text-black-50 text-center my-auto" style="display: inline-block;">
-                    Karl Marx
-                    </h6>
-                    <p class="text-black-50">
-                    "The philosophers have only interpreted the world, in various ways, the point, 
-                    however, is to change it."
-                    </p>
-                    </div>
-                </div>
-                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                    <div class="phil_pad">
-                    <img class="img-fluid rounded" src="static/philosophers/carl_jung_2.jpeg">
-                    <h6 class="text-black-50 text-center my-auto" style="display: inline-block;">
-                    Carl Jung
-                    </h6>
-                    <p class="text-black-50">
-                    "The horror which we feel for Freudian interpretation is 
-                    entirely due to our barbaric or childish naivete, which believes that there can
-                    be heights without corresponding depths, and which blinds us to the really "final"
-                    truth that, when carried to extremes, opposites meet."
-                    </p>
-                    </div>
-                    <div class="phil_pad">
-                    <img class="img-fluid rounded" src="static/philosophers/heraclitus_2.jpg">
-                    <h6 class="text-black-50 text-center my-auto" style="display: inline-block;">
-                    Heraclitus
-                    </h6>
-                    <p class="text-black-50">
-                    "One cannot step into the same river twice."
-                    </p>
-                    </div>
-                </div>
-                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                    <div class="phil_pad">
-                    <img class="img-fluid rounded" src="static/philosophers/schopenhauer_2.png">
-                    <h6 class="text-black-50 text-center my-auto" style="display: inline-block;">
-                    Arthur Schopenhauer
-                    </h6>
-                    <p class="text-black-50">
-                    "Man can do what he wants, but he cannot will what he wants."
-                    </p>
-                    </div>
-                    <div class="phil_pad">
-                    <img class="img-fluid rounded" src="static/philosophers/david_hume_2.jpg">
-                    <h6 class="text-black-50 text-center my-auto" style="display: inline-block;">
-                    David Hume
-                    </h6>
-                    <p class="text-black-50">
-                    "Eloquence, at its highest pitch, addresses itself entirely to the fancy or the
-                    affections, captivates the willing hearers and subdues their understanding."
-                    </p>
-                    </div>
-                </div>
-                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                    <div class="phil_pad">
-                    <img class="img-fluid rounded" src="static/philosophers/plato_2.jpg">
-                    <h6 class="text-black-50 text-center my-auto" style="display: inline-block;">
-                    Plato
-                    </h6>
-                    <p class="text-black-50">
-                    "The unexamined life is not worth living."
-                    </p>
-                    </div>
-                    <div class="phil_pad">
-                    <img class="img-fluid rounded" src="static/philosophers/shakespeare_2.jpg">
-                    <h6 class="text-black-50 text-center my-auto" style="display: inline-block;">
-                    William Shakespeare
-                    </h6>
-                    <p class="text-black-50">
-                    "All's well that ends well."
-                    </p>
-                    </div>
-                    <div class="phil_pad">
-                    <img class="img-fluid rounded" src="static/philosophers/ockham_2.jpg">
-                    <h6 class="text-black-50 text-center my-auto" style="display: inline-block;">
-                    William of Ockham
-                    </h6>
-                    <p class="text-black-50">
-                    "Entities should not be multiplied without necessity."
-                    </p>
-                    <div>
-                </div>
-            </div>
-        </div>
-        </section>
-        <div class="white-br"></div>
-        
-        <section id="contact" class="main contact">
-        <div class="container" style="height:25%;margin-left:0px;">
-            <div class="row">
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 text-left my-auto">
-                    </br></br><h1 class="page-logo">Contact</h1>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row justify-content-around" style="margin-top:15%;">
-                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 d-none d-lg-block container_2
-                text-center my-auto exp_pad_3" style="border-radius: 25% 0%;">
-                <img class="img-fluid rounded" src="static/images/self-portrait_2.png"
-                alt="Edward Moradian self-portrait">
-                </div>
-                <div class="contact1 text-center my-auto col-xs-3 col-sm-3 col-md-3 col-lg-3 container_2
-                text-center my-auto exp_pad_3" style="border-radius: 0% 0% 15% 15%;">
-                <h1>
-                Connect with me! Lets start a conversation!
-                </h1>
-                </div>
-                <div class="text-center col-xs-4 col-sm-4 col-md-4 col-lg-4 container_2
-                text-center exp_pad_3" style="border-radius: 0% 25%; margin-top:2%;">
-                Add, follow or connect with me on these sites:
-                    <nav>
-                        <ul style="padding-left:0px;">
-                            <li><a href="mailto:egmoradian@gmail.com">
-                            <img class="img-fluid rounded" src="static/images/gmail.jpg"></a></li>
-                            <li><a href="https://www.linkedin.com/in/edwardmoradian/">
-                            <img class="img-fluid rounded" src="static/images/linkedin_2.png"></a></li>
-                            </br>
-                            <li><a href="https://github.com/edwardmoradian">
-                            <img class="img-fluid rounded" src="static/images/github_2.png"></a></li>
-                            <li><a href="https://stackoverflow.com/users/11365106/edwardmoradian/">
-                            <img class="img-fluid rounded" src="static/images/stack.png"></a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-            </row>
-        </section>
-        <div class="black-br"></div>
-                
-        <footer>
-            <div class="credits">
-                <p>&emsp;&emsp;Built with HTML5 and Bootstrap CSS. © 2024 All rights reserved.</p>
-            </div>
-        </footer>
-    </body>
+    </footer>
+</body>
 </html>
-
-
-<!-- Specific Page JS goes HERE  -->
-
-<script>
-
-</script>
-
