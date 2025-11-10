@@ -552,6 +552,10 @@ img {
     filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.08));
 }
 
+.logo-group.stack-column {
+    grid-template-columns: 1fr;
+}
+
 /* Contact */
 #contact {
     scroll-margin-top: 140px;
