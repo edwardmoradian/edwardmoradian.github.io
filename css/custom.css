@@ -98,6 +98,7 @@ img {
     justify-content: space-between;
     gap: 1.5rem;
     padding: 1rem 0;
+    position: relative;
 }
 
 .nav-brand {
@@ -163,6 +164,25 @@ img {
 
 .nav-links a.active {
     color: var(--text-primary);
+}
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    background: transparent;
+    border: none;
+    padding: 0.25rem;
+    cursor: pointer;
+}
+
+.nav-toggle span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--text-primary);
+    transition: transform 0.2s ease;
 }
 
 .btn {
@@ -630,6 +650,26 @@ footer {
 @media (max-width: 768px) {
     .nav-links {
         display: none;
+        position: absolute;
+        top: calc(100% + 0.5rem);
+        right: 0;
+        background: var(--card-bg);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 1rem;
+        flex-direction: column;
+        gap: 0.75rem;
+        min-width: 200px;
+        box-shadow: var(--shadow);
+        z-index: 1000;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: flex;
     }
 
     .detail-list div {

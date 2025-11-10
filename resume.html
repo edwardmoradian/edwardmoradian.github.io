@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="css/custom.css">
     <script src="bootstrap/js/bootstrap.min.js" defer></script>
+    <script src="js/main.js" defer></script>
 </head>
 <body id="top">
     <a class="skip-link" href="#main">Skip to content</a>
@@ -31,6 +32,11 @@
                 <a href="techstack.html">Tech Stack</a>
                 <a href="contact.html">Contact</a>
             </div>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
 
@@ -99,8 +105,8 @@
                         </div>
                         <div class="card-body">
                             <ul>
-                            <li><strong>ETL Pipelines:</strong> Used Airflow to develop data pipelines joining petabyte-sized core tables into a functional format for a marketing small business unit context.</li>
-                            <li><strong>ELT Pipelines:</strong> Developed a dbt model on a scheduled cadence to create a foundational one-big-table financial transactions model combining raw data tables from orders, fulfillments, exchanges, returns, products, discounts, and more for both online and retail store data from Shopify.</li>
+                            <li><strong>ETL Pipelines on Airflow:</strong> Used Airflow to develop data pipelines joining petabyte-sized core tables into a functional format for a marketing small business unit context.</li>
+                            <li><strong>ETL Pipelines on dbt:</strong> Developed a dbt model on a scheduled cadence to create a foundational one-big-table financial transactions model combining raw data tables from orders, fulfillments, exchanges, returns, products, discounts, and more for both online and retail store data from Shopify.</li>
                             <li><strong>Data Orchestration:</strong> Orchestrated data pipelines to automate data ingestion and transformation through cloud functions, pub/sub topics, scheduled scripts, and on-demand scripts.</li>
                             </ul>
                         </div>
