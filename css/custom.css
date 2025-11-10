@@ -576,12 +576,6 @@ img {
     grid-template-columns: 1fr;
 }
 
-.logo-group span {
-    display: block;
-    color: var(--text-primary);
-    font-weight: 400;
-}
-
 .logo-group.align-left {
     align-items: flex-start;
     justify-items: start;
@@ -589,16 +583,32 @@ img {
 
 .industry-item {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 0.6rem;
 }
 
 .industry-item img {
-    width: 36px;
-    height: 36px;
-    border-radius: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 14px;
     object-fit: cover;
     background: rgba(255,255,255,0.8);
+}
+
+.industry-text {
+    color: var(--text-primary);
+}
+
+.industry-text strong {
+    font-weight: 600;
+    display: block;
+}
+
+.industry-text ul {
+    margin: 0.35rem 0 0 1rem;
+    padding-left: 1rem;
+    color: var(--text-secondary);
+    list-style: disc;
 }
 
 /* Contact */
