@@ -1,12 +1,12 @@
 :root {
-    --page-bg: #f7f8fb;
+    --page-bg: #ffffff;
     --card-bg: #ffffff;
     --text-primary: #111827;
     --text-secondary: #4b5563;
     --accent: #0b6efd;
-    --accent-soft: #cfe0ff;
-    --border: #e2e8f0;
-    --shadow: 0 15px 45px rgba(15, 23, 42, 0.08);
+    --accent-soft: #e0edff;
+    --border: #edf0f5;
+    --shadow: 0 10px 24px rgba(15, 23, 42, 0.05);
 }
 
 * {
@@ -86,9 +86,9 @@ img {
 
 /* Navigation */
 .modern-nav {
-    background: rgba(247, 248, 251, 0.95);
+    background: #ffffff;
     border-bottom: 1px solid var(--border);
-    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.05);
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
     backdrop-filter: blur(6px);
 }
 
@@ -117,7 +117,8 @@ img {
 .brand-name {
     font-weight: 600;
     margin-bottom: 0;
-    font-size: 1.35rem;
+    font-size: 1.6rem;
+    color: #1f2937;
 }
 
 .brand-role {
@@ -128,14 +129,15 @@ img {
 
 .nav-links {
     display: flex;
-    gap: 1.25rem;
+    gap: 1.75rem;
     font-weight: 500;
 }
 
 .nav-links a {
-    color: var(--text-secondary);
+    color: #1f2937;
     position: relative;
     padding-bottom: 0.35rem;
+    font-size: 1.1rem;
     text-decoration: none;
 }
 
@@ -690,7 +692,7 @@ img {
 footer {
     border-top: 1px solid var(--border);
     padding: 2rem 0;
-    background: #f4f5f9;
+    background: #ffffff;
 }
 
 .footer-content {
