@@ -220,6 +220,14 @@ img {
     color: var(--text-primary);
 }
 
+.ghost-btn:hover {
+    transform: translateY(-2px);
+}
+
+.resume-download {
+    margin-top: 1.25rem;
+}
+
 .hero-grid {
     display: grid;
     gap: 3rem;
