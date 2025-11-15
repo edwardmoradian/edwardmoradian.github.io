@@ -615,10 +615,10 @@ img {
 }
 
 .industry-text ul {
-    margin: 0.35rem 0 0 1rem;
-    padding-left: 1rem;
+    margin: 0.35rem 0 0;
+    padding-left: 0;
     color: var(--text-secondary);
-    list-style: disc;
+    list-style: none;
 }
 
 /* Contact */
