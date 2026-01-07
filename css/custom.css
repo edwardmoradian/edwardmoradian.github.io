@@ -74,6 +74,10 @@ img {
     background: transparent;
 }
 
+.main.hero {
+    padding-top: 1.25rem;
+}
+
 .container {
     max-width: 1100px;
     margin: 0 auto;
@@ -257,11 +261,14 @@ img {
 }
 
 .hero-media {
-    background: var(--card-bg);
+    background: var(--page-bg);
     border-radius: 24px;
     padding: 1.5rem;
-    border: 1px solid var(--border);
+    border: none;
     box-shadow: var(--shadow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .detail-list {
@@ -292,8 +299,9 @@ img {
 
 .hero-portrait {
     border-radius: 20px;
-    width: 100%;
+    width: auto;
     height: auto;
+    max-width: none;
     box-shadow: none;
 }
 
