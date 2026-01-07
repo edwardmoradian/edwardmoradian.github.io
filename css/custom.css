@@ -305,6 +305,12 @@ img {
     box-shadow: none;
 }
 
+.hero-portrait-standard {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
 /* Sections */
 .eyebrow {
     text-transform: uppercase;
