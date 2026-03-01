@@ -1,0 +1,8 @@
+# macOS
+.DS_Store
+
+# IDE
+.spyproject/
+
+# Node (if ever added)
+node_modules/
