@@ -299,9 +299,9 @@ img {
 
 .hero-portrait {
     border-radius: 20px;
-    width: auto;
+    width: 100%;
+    max-width: 280px;
     height: auto;
-    max-width: none;
     box-shadow: none;
 }
 
