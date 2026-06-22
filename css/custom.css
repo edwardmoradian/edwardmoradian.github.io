@@ -279,22 +279,28 @@ img {
 
 .detail-list div {
     display: grid;
-    grid-template-columns: 120px auto;
+    grid-template-columns: 180px auto;
     gap: 0.5rem;
     align-items: baseline;
 }
 
 .detail-list dt {
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
     color: var(--text-secondary);
 }
 
 .detail-list dd {
     margin: 0;
+    font-weight: 500;
 }
 
 .hero-details {
     margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border);
 }
 
 .hero-portrait {
