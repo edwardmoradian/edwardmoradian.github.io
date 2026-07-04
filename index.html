@@ -25,9 +25,8 @@
     <link rel="sitemap" type="application/xml" title="Sitemap" href="https://edwardmoradian.github.io/sitemap.xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="static/images/favicon.png">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/custom.css">
     <script src="js/main.js" defer></script>
     <script type="application/ld+json">
@@ -131,15 +130,14 @@
 </head>
 <body id="top">
     <a class="skip-link" href="#main">Skip to content</a>
-    <nav id="navbar" class="navbar sticky-top modern-nav">
+    <nav id="navbar" class="site-nav">
         <div class="container nav-content">
             <div class="nav-brand">
-                <div>
-                    <p class="brand-name">Edward Moradian</p>
-                </div>
+                <div class="brand-mono">EM</div>
+                <p class="brand-name">Edward Moradian</p>
             </div>
             <div class="nav-links">
-                <a href="index.html">About</a>
+                <a href="index.html" class="active">About</a>
                 <a href="resume.html">Resume</a>
                 <a href="techstack.html">Tech Stack</a>
                 <a href="industries.html">Industries</a>
@@ -155,40 +153,45 @@
     </nav>
 
     <main id="main">
-        <section id="home" class="main hero">
-            <div class="container hero-grid">
-                <div class="hero-media">
-                    <img src="static/images/full_portrait_orig.jpg" alt="Edward Moradian" class="hero-portrait">
-                </div>
-                <div class="hero-text">
-                    <h1 class="hero-subtitle">Data Science &amp; Analytics Leader</h1>
-                    <dl class="detail-list hero-details">
-                        <div>
-                            <dt>Primary Area of Expertise</dt>
-                            <dd>Data Science and Statistics</dd>
+        <section id="home" class="section hero-section">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-media">
+                        <div class="portrait-frame">
+                            <img src="static/images/full_portrait_orig.jpg" alt="Edward Moradian">
                         </div>
-                        <div>
-                            <dt>Secondary Area of Expertise</dt>
-                            <dd>Data engineering, dashboarding, and data orchestration</dd>
-                        </div>
-                        <div>
-                            <dt>Education</dt>
-                            <dd>M.S. Statistics</dd>
-                        </div>
-                        <div>
-                            <dt>Location</dt>
-                            <dd>Los Angeles, California</dd>
-                        </div>
-                    </dl>
-                    <p class="lead">
-                        Data Scientist with extensive experience across data science domains, tech stacks, databases, companies, industries, business units, and stakeholders.
-                    </p>
-                    <p class="lead">
-                        Acquired foundational knowledge through M.S. Statistics degree and developed experiential skills of the complete data lifecycle through career experience.
-                    </p>
-                    <p class="lead">
-                        Able to create data sources from raw data to modeling and analyzing the data to presenting deliverable interactive dashboards.
-                    </p>
+                    </div>
+                    <div class="hero-text">
+                        <span class="eyebrow">About</span>
+                        <h1>Data Science &amp; Analytics Leader</h1>
+                        <dl class="detail-list">
+                            <div>
+                                <dt>Primary Area of Expertise</dt>
+                                <dd>Data Science and Statistics</dd>
+                            </div>
+                            <div>
+                                <dt>Secondary Area of Expertise</dt>
+                                <dd>Data engineering, dashboarding, and data orchestration</dd>
+                            </div>
+                            <div>
+                                <dt>Education</dt>
+                                <dd>M.S. Statistics</dd>
+                            </div>
+                            <div>
+                                <dt>Location</dt>
+                                <dd>Los Angeles, California</dd>
+                            </div>
+                        </dl>
+                        <p class="lead">
+                            Data Scientist with extensive experience across data science domains, tech stacks, databases, companies, industries, business units, and stakeholders.
+                        </p>
+                        <p class="lead">
+                            Acquired foundational knowledge through M.S. Statistics degree and developed experiential skills of the complete data lifecycle through career experience.
+                        </p>
+                        <p class="lead">
+                            Able to create data sources from raw data to modeling and analyzing the data to presenting deliverable interactive dashboards.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
