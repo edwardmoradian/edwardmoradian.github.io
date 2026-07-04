@@ -284,6 +284,7 @@ footer { border-top: 1px solid var(--border); padding: 2rem 0; background: #fff;
 .ask-ai-text { animation: heroIn 0.7s ease both; }
 .ai-media    { animation: heroIn 0.7s ease 0.08s both; }
 .section-head { animation: heroIn 0.6s ease both; }
+.error-page { animation: heroIn 0.6s ease both; }
 .contact-card { animation: heroIn 0.7s ease both; }
 .contact-card:nth-child(2) { animation-delay: 0.1s; }
 
@@ -294,6 +295,6 @@ footer { border-top: 1px solid var(--border); padding: 2rem 0; background: #fff;
 
 @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
-    .hero-text, .hero-media, .ask-ai-text, .ai-media, .section-head, .contact-card { animation: none; }
+    .hero-text, .hero-media, .ask-ai-text, .ai-media, .section-head, .contact-card, .error-page { animation: none; }
     .reveal, .reveal.in-view { opacity: 1; transform: none; transition: none; }
 }
