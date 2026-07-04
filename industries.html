@@ -17,25 +17,23 @@
     <link rel="icon" type="image/png" href="static/images/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/custom.css">
     <script src="js/main.js" defer></script>
 </head>
 <body id="top">
     <a class="skip-link" href="#main">Skip to content</a>
-    <nav id="navbar" class="navbar sticky-top modern-nav">
+    <nav id="navbar" class="site-nav">
         <div class="container nav-content">
             <div class="nav-brand">
-                <div>
-                    <p class="brand-name">Edward Moradian</p>
-                </div>
+                <div class="brand-mono">EM</div>
+                <p class="brand-name">Edward Moradian</p>
             </div>
             <div class="nav-links">
                 <a href="index.html">About</a>
                 <a href="resume.html">Resume</a>
                 <a href="techstack.html">Tech Stack</a>
-                <a href="industries.html">Industries</a>
+                <a href="industries.html" class="active">Industries</a>
                 <a href="ask-ai-about-me.html">Ask AI About Me</a>
                 <a href="contact.html">Contact</a>
             </div>
@@ -48,149 +46,76 @@
     </nav>
 
     <main id="main">
-        <section id="industries" class="main tech-stack-page">
+        <section id="industries" class="section">
             <div class="container">
-                <p class="eyebrow">Industries</p>
-                <div class="section-header">
+                <span class="eyebrow">Industries</span>
+                <div class="section-head">
                     <h1>Experience across companies, industries and business units.</h1>
                 </div>
-                <div class="industries-grid">
-                    <article class="tech-card">
+                <div class="ind-grid">
+                    <article class="ind-card">
                         <h3>Big Tech</h3>
-                        <div class="logo-group stack-column align-left">
-                            <div class="industry-item">
-                                <img src="static/images/reality_labs.jpeg" alt="Meta Reality Labs icon" loading="lazy">
-                                <div class="industry-text">
-                                    <strong>Meta Reality Labs</strong>
-                                    <ul>
-                                        <li>Project Aria</li>
-                                        <li>Analytics Team</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="industry-item">
-                                <img src="static/images/microsoft.png" alt="Microsoft icon" loading="lazy">
-                                <div class="industry-text">
-                                    <strong>Microsoft</strong>
-                                    <ul>
-                                        <li>Xbox Cloud Gaming</li>
-                                        <li>Data Science Team</li>
-                                    </ul>
-                                </div>
-                            </div>
+                        <div class="ind-row">
+                            <img src="static/images/reality_labs.jpeg" alt="Meta Reality Labs icon" loading="lazy">
+                            <div><strong>Meta Reality Labs</strong><span>Project Aria · Analytics Team</span></div>
+                        </div>
+                        <div class="ind-row">
+                            <img src="static/images/microsoft.png" alt="Microsoft icon" loading="lazy">
+                            <div><strong>Microsoft</strong><span>Xbox Cloud Gaming · Data Science Team</span></div>
                         </div>
                     </article>
-                    <article class="tech-card">
+                    <article class="ind-card">
                         <h3>Retail</h3>
-                        <div class="logo-group stack-column align-left">
-                            <div class="industry-item">
-                                <img src="static/images/alo.png" alt="Alo Yoga icon" loading="lazy">
-                                <div class="industry-text">
-                                    <strong>Alo Yoga</strong>
-                                    <ul>
-                                        <li>Data Science Team</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="industry-item">
-                                <img src="static/images/harbor_freight.png" alt="Harbor Freight icon" loading="lazy">
-                                <div class="industry-text">
-                                    <strong>Harbor Freight</strong>
-                                    <ul>
-                                        <li>Analytics Team</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="industry-item">
-                                <img src="static/images/ppg.png" alt="PPG icon" loading="lazy">
-                                <div class="industry-text">
-                                    <strong>PPG</strong>
-                                    <ul>
-                                        <li>Digital Transformation Organization</li>
-                                        <li>Analytics Team</li>
-                                    </ul>
-                                </div>
-                            </div>
+                        <div class="ind-row">
+                            <img src="static/images/alo.png" alt="Alo Yoga icon" loading="lazy">
+                            <div><strong>Alo Yoga</strong><span>Data Science Team</span></div>
+                        </div>
+                        <div class="ind-row">
+                            <img src="static/images/harbor_freight.png" alt="Harbor Freight icon" loading="lazy">
+                            <div><strong>Harbor Freight</strong><span>Analytics Team</span></div>
+                        </div>
+                        <div class="ind-row">
+                            <img src="static/images/ppg.png" alt="PPG icon" loading="lazy">
+                            <div><strong>PPG</strong><span>Digital Transformation Organization · Analytics Team</span></div>
                         </div>
                     </article>
-                    <article class="tech-card">
+                    <article class="ind-card">
                         <h3>Marketing</h3>
-                        <div class="logo-group stack-column align-left">
-                            <div class="industry-item">
-                                <img src="static/images/meta.png" alt="Meta icon" loading="lazy">
-                                <div class="industry-text">
-                                    <strong>Meta</strong>
-                                    <ul>
-                                        <li>Marketing</li>
-                                        <li>Small Business Group</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="industry-item">
-                                <img src="static/images/canvas_worldwide.png" alt="Canvas Worldwide icon" loading="lazy">
-                                <div class="industry-text">
-                                    <strong>Canvas Worldwide</strong>
-                                    <ul>
-                                        <li>Marketing Analytics Team</li>
-                                    </ul>
-                                </div>
-                            </div>
-                       </div>
+                        <div class="ind-row">
+                            <img src="static/images/meta.png" alt="Meta icon" loading="lazy">
+                            <div><strong>Meta</strong><span>Marketing · Small Business Group</span></div>
+                        </div>
+                        <div class="ind-row">
+                            <img src="static/images/canvas_worldwide.png" alt="Canvas Worldwide icon" loading="lazy">
+                            <div><strong>Canvas Worldwide</strong><span>Marketing Analytics Team</span></div>
+                        </div>
                     </article>
-                    <article class="tech-card">
+                    <article class="ind-card">
                         <h3>Healthcare</h3>
-                        <div class="logo-group stack-column align-left">
-                            <div class="industry-item">
-                                <img src="static/images/penumbra.jpeg" alt="Penumbra icon" loading="lazy">
-                                <div class="industry-text">
-                                    <strong>Penumbra</strong>
-                                    <ul>
-                                        <li>Statistics Department</li>
-                                    </ul>
-                                </div>
-                            </div>
+                        <div class="ind-row">
+                            <img src="static/images/penumbra.jpeg" alt="Penumbra icon" loading="lazy">
+                            <div><strong>Penumbra</strong><span>Statistics Department</span></div>
                         </div>
                     </article>
-                    <article class="tech-card">
+                    <article class="ind-card">
                         <h3>Manufacturing</h3>
-                        <div class="logo-group stack-column align-left">
-                            <div class="industry-item">
-                                <img src="static/images/honeywell.png" alt="Honeywell icon" loading="lazy">
-                                <div class="industry-text">
-                                    <strong>Honeywell</strong>
-                                    <ul>
-                                        <li>Global Logistics</li>
-                                    </ul>
-                                </div>
-                            </div>
+                        <div class="ind-row">
+                            <img src="static/images/honeywell.png" alt="Honeywell icon" loading="lazy">
+                            <div><strong>Honeywell</strong><span>Global Logistics</span></div>
                         </div>
                     </article>
-                    <article class="tech-card">
+                    <article class="ind-card">
                         <h3>Non-Profit Organizations</h3>
-                        <div class="logo-group stack-column align-left">
-                            <div class="industry-item">
-                                <img src="static/images/edf.png" alt="Environmental Defense Fund icon" loading="lazy">
-                                <div class="industry-text">
-                                    <strong>Environmental Defense Fund</strong>
-                                    <ul>
-                                        <li>Office of the Chief Economist</li>
-                                    </ul>
-                                </div>
-                            </div>
-                       </div>
+                        <div class="ind-row">
+                            <img src="static/images/edf.png" alt="Environmental Defense Fund icon" loading="lazy">
+                            <div><strong>Environmental Defense Fund</strong><span>Office of the Chief Economist</span></div>
+                        </div>
                     </article>
-                    <article class="tech-card">
+                    <article class="ind-card">
                         <h3>Insurance</h3>
-                        <div class="logo-group stack-column align-left">
-                            <div class="industry-item">
-                                <img src="static/images/scif.png" alt="State Compensation Insurance Fund icon" loading="lazy">
-                                <div class="industry-text">
-                                    <strong>State Compensation Insurance Fund</strong>
-                                    <ul>
-                                        <li>Data Science Team</li>
-                                    </ul>
-                                </div>
-                            </div>
+                        <div class="ind-row">
+                            <img src="static/images/scif.png" alt="State Compensation Insurance Fund icon" loading="lazy">
+                            <div><strong>State Compensation Insurance Fund</strong><span>Data Science Team</span></div>
                         </div>
                     </article>
                 </div>
