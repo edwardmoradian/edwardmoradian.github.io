@@ -35,3 +35,36 @@ if (toggle && navLinks) {
         }
     });
 }
+
+// Scroll reveals — progressive enhancement. Cards below the fold fade/slide in
+// as they enter the viewport. No JS (or reduced-motion) => everything just shows.
+(() => {
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const targets = document.querySelectorAll('.resume-card, .tech-card, .ind-card');
+    if (prefersReduced || !targets.length || !('IntersectionObserver' in window)) return;
+
+    // Stagger cards within each grid for a nicer cascade.
+    document.querySelectorAll('.resume-grid, .tech-grid, .ind-grid').forEach((grid) => {
+        Array.from(grid.children).forEach((child, i) => {
+            child.style.transitionDelay = (i % 4) * 60 + 'ms';
+        });
+    });
+
+    const io = new IntersectionObserver((entries, obs) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('in-view');
+                obs.unobserve(entry.target);
+            }
+        });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+
+    const foldLine = window.innerHeight * 0.92;
+    targets.forEach((el) => {
+        // Elements already on-screen at load stay visible (no flash, no animation);
+        // only below-the-fold cards get the reveal treatment.
+        if (el.getBoundingClientRect().top < foldLine) return;
+        el.classList.add('reveal');
+        io.observe(el);
+    });
+})();
