@@ -88,7 +88,7 @@ img { max-width: 100%; height: auto; display: block; }
 .section { padding: 3rem 0 4rem; }
 .section.hero-section { padding: 3.5rem 0 4.5rem; }
 .eyebrow { display: inline-block; font-size: 0.72rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.22em; color: var(--accent); margin: 0 0 1.25rem; }
-.section-head h1 { font-size: clamp(2rem, 4vw, 3.1rem); margin: 0; max-width: 15ch; }
+.section-head h1 { font-size: clamp(2rem, 4vw, 3.1rem); margin: 0; }
 
 /* ---------- Home / hero ---------- */
 .hero-grid { display: grid; grid-template-columns: 280px 1fr; gap: 3.5rem; align-items: center; }
@@ -106,7 +106,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* ---------- Resume ---------- */
 .resume-download { margin-top: 2rem; }
-.section-head { max-width: 46ch; }
+.section-head { max-width: 760px; }
 .resume-grid { margin-top: 1.5rem; display: flex; flex-direction: column; }
 .resume-card {
     display: grid; grid-template-columns: 1fr 300px;
