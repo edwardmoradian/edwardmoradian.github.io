@@ -219,3 +219,34 @@ footer { border-top: 1px solid var(--border); padding: 1.9rem 0; background: var
     .portrait-frame img { filter: none; }
     .reveal, .reveal.in-view { opacity: 1; transform: none; transition: none; }
 }
+
+
+/* ---------- Industries (grouped rows) ---------- */
+.ind-groups { margin-top: 1.5rem; display: flex; flex-direction: column; }
+.ind-group { display: grid; grid-template-columns: 180px 1fr; gap: 2rem; padding: 1.6rem 0; border-top: 1px solid var(--border); align-items: start; }
+.ind-label { font-family: 'Newsreader', serif; font-weight: 500; color: var(--accent); font-size: 1rem; padding-top: 0.4rem; }
+.ind-companies { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 0.9rem; }
+.ind-company { display: flex; align-items: center; gap: 0.9rem; background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 0.9rem 1rem; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.ind-company:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
+.ind-logo { width: 46px; height: 46px; border-radius: 10px; background: #fff; border: 1px solid rgba(46,42,36,0.08); display: grid; place-items: center; padding: 8px; flex: none; }
+.ind-logo img { max-width: 100%; max-height: 100%; object-fit: contain; }
+.ind-company > div > strong { display: block; font-family: 'Hanken Grotesk', sans-serif; font-weight: 600; font-size: 0.9rem; }
+.ind-company > div > span { color: var(--muted); font-size: 0.8rem; }
+@media (max-width: 720px) { .ind-group { grid-template-columns: 1fr; gap: 0.8rem; } }
+
+/* ---------- Ask AI (centered) ---------- */
+.askai-hero { display: flex; flex-direction: column; align-items: center; text-align: center; max-width: 660px; margin: 0 auto; padding: 2rem 0 2.5rem; animation: heroIn 0.7s ease both; }
+.askai-portrait { width: 300px; height: 300px; border-radius: 50%; overflow: hidden; border: 8px solid var(--card-bg); box-shadow: 0 34px 64px -28px rgba(185,92,57,0.5); background: #E7DFD2; margin-bottom: 2rem; }
+.askai-portrait img { width: 100%; height: 100%; object-fit: cover; }
+.askai-hero .eyebrow { margin-bottom: 0.6rem; }
+.askai-hero h1 { font-size: clamp(2.2rem, 4vw, 3rem); margin: 0 0 1rem; }
+.askai-hero .lead { max-width: 52ch; }
+
+/* ---------- Contact (channels left, portrait card right) ---------- */
+.contact-channels { margin-top: 1.75rem; padding-top: 1.5rem; border-top: 1px solid var(--border); }
+.contact-meta { display: flex; flex-direction: column; }
+.contact-meta strong { font-family: 'Hanken Grotesk', sans-serif; font-weight: 600; font-size: 0.84rem; color: var(--text-primary); }
+.contact-meta a { color: var(--accent); font-size: 0.8rem; font-weight: 500; }
+.contact-caption { text-align: center; margin-top: 1rem; }
+.contact-caption strong { display: block; font-family: 'Newsreader', serif; font-weight: 500; font-size: 0.98rem; color: var(--text-primary); }
+.contact-caption span { color: var(--muted); font-size: 0.75rem; }
